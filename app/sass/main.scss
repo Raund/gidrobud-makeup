@@ -60,6 +60,9 @@ body{
     padding-left: 30px;
     padding-right: 30px;
   }
+  &_other{
+    padding-bottom: 60px;
+  }
 }
 .btn{
   width: 170px;
@@ -79,6 +82,10 @@ body{
   &:hover{
     background-image: linear-gradient(top, #db911b 0%, #db911b 0%, #ffbc55 36.01%, #db911b 100%);
   }
+}
+.nav__blue{
+  box-shadow: -1px 4px 0 #5d93d3;
+  background-image: linear-gradient(top, #4f85c9 0%, #4f85c9 0%, #4f85c9 36.01%, #67aff8 100%);
 }
 .btn__blue{
   box-shadow: -1px 4px 0 #5d93d3;
@@ -139,6 +146,10 @@ nav{
 }
 .advertising-section{
   margin-top: -70px;
+}
+.advertising-section_in-content{
+  margin-top: 30px;
+  margin-bottom: 90px;
 }
 .statistic-item-wrap{
   border-left: 3px solid #64aa78;
@@ -319,6 +330,30 @@ nav{
   background-size: initial;
   background-repeat: no-repeat;
 }
+.content-section{
+  padding-left: 30px;
+  padding-right: 30px;
+  p{
+    margin-bottom: 10px;
+  }
+  &_box{
+    width: 100%;
+    border: 1px dashed #000000;
+    padding: 25px;
+    font-size: 25px;
+    text-align: center;
+  }
+  img{
+    width: 100%;
+    height: auto;
+    border: 1px dashed #000000;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+}
+.section-title_content{
+  margin-bottom: 20px;
+}
 .footer{
   width: 100%;
   height: 140px;
@@ -345,6 +380,5 @@ nav{
   &.active{
     text-decoration: underline;  }
 }
-
 //ALWAYS END
 @import "media.scss";
