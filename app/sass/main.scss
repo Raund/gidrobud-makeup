@@ -351,8 +351,15 @@ nav{
     margin-bottom: 20px;
   }
 }
+.column{
+  column-count: 2;
+  column-gap: 90px;
+}
 .section-title_content{
   margin-bottom: 20px;
+}
+.flex-gallery{
+  margin-bottom: 80px;
 }
 .footer{
   width: 100%;
