@@ -66,22 +66,24 @@ body {
   padding: 10px;
   -webkit-border-radius: 16px;
           border-radius: 16px;
+  border: none;
   color: #fefefe;
   font-size: 14px;
   text-align: center; }
   .btn:hover {
     cursor: pointer; }
 
-.btn__yellow {
-  -webkit-box-shadow: -1px 4px 0 #db911b;
-          box-shadow: -1px 4px 0 #db911b;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#db911b), color-stop(0%, #db911b), color-stop(36.01%, #db911b), to(#ffbc55));
-  background-image: -webkit-linear-gradient(top, #db911b 0%, #db911b 0%, #db911b 36.01%, #ffbc55 100%);
-  background-image: linear-gradient(top, #db911b 0%, #db911b 0%, #db911b 36.01%, #ffbc55 100%); }
-  .btn__yellow:hover {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#db911b), color-stop(0%, #db911b), color-stop(36.01%, #ffbc55), to(#db911b));
-    background-image: -webkit-linear-gradient(top, #db911b 0%, #db911b 0%, #ffbc55 36.01%, #db911b 100%);
-    background-image: linear-gradient(top, #db911b 0%, #db911b 0%, #ffbc55 36.01%, #db911b 100%); }
+.btn__green {
+  margin-top: 10px;
+  -webkit-box-shadow: -1px 4px 0 #559d69;
+          box-shadow: -1px 4px 0 #559d69;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#71d38d), color-stop(1%, #71d38d), color-stop(55.64%, #559d69), to(#71d38d));
+  background-image: -webkit-linear-gradient(bottom, #71d38d 0%, #71d38d 1%, #559d69 55.64%, #71d38d 100%);
+  background-image: linear-gradient(bottom, #71d38d 0%, #71d38d 1%, #559d69 55.64%, #71d38d 100%); }
+  .btn__green:hover {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#71d38d), color-stop(0%, #71d38d), color-stop(36.01%, #71d38d), to(#559d69));
+    background-image: -webkit-linear-gradient(top, #71d38d 0%, #71d38d 0%, #71d38d 36.01%, #559d69 100%);
+    background-image: linear-gradient(top, #71d38d 0%, #71d38d 0%, #71d38d 36.01%, #559d69 100%); }
 
 .nav__blue {
   -webkit-box-shadow: -1px 4px 0 #5d93d3;
@@ -100,6 +102,17 @@ body {
     background-image: -webkit-gradient(linear, left top, left bottom, from(#4f85c9), color-stop(0%, #4f85c9), color-stop(36.01%, #67aff8), to(#4f85c9));
     background-image: -webkit-linear-gradient(top, #4f85c9 0%, #4f85c9 0%, #67aff8 36.01%, #4f85c9 100%);
     background-image: linear-gradient(top, #4f85c9 0%, #4f85c9 0%, #67aff8 36.01%, #4f85c9 100%); }
+
+.btn__yellow {
+  -webkit-box-shadow: -1px 4px 0 #db911b;
+          box-shadow: -1px 4px 0 #db911b;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#db911b), color-stop(0%, #db911b), color-stop(36.01%, #db911b), to(#ffbc55));
+  background-image: -webkit-linear-gradient(top, #db911b 0%, #db911b 0%, #db911b 36.01%, #ffbc55 100%);
+  background-image: linear-gradient(top, #db911b 0%, #db911b 0%, #db911b 36.01%, #ffbc55 100%); }
+  .btn__yellow:hover {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#db911b), color-stop(0%, #db911b), color-stop(36.01%, #ffbc55), to(#db911b));
+    background-image: -webkit-linear-gradient(top, #db911b 0%, #db911b 0%, #ffbc55 36.01%, #db911b 100%);
+    background-image: linear-gradient(top, #db911b 0%, #db911b 0%, #ffbc55 36.01%, #db911b 100%); }
 
 .btn__center {
   margin: 0 auto;
@@ -362,6 +375,53 @@ nav {
 
 .flex-gallery {
   margin-bottom: 80px; }
+
+.project-btn-wrapper {
+  padding-top: 50px; }
+
+.project-content {
+  padding: 10px 0 70px; }
+
+#overlay {
+  z-index: 13;
+  position: fixed;
+  background-color: #000;
+  opacity: 0.8;
+  -moz-opacity: 0.8;
+  filter: alpha(opacity=80);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  display: none; }
+
+.project-popup_wrap {
+  display: none;
+  position: fixed;
+  top: 50px !important;
+  left: 50%;
+  margin-left: -500px;
+  width: 80%;
+  max-width: 1000px;
+  border: 1px dashed #000;
+  background-color: #fff;
+  padding: 15px;
+  z-index: 15; }
+
+.project-popup_item-img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px; }
+
+.project-item_title-in-popup {
+  margin-top: 0; }
+
+.project-category {
+  display: none; }
+
+.project-category:first-child {
+  display: block; }
 
 .footer {
   width: 100%;
