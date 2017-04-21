@@ -72,8 +72,18 @@ $(function(){
         $('.project-btn-wrapper .btn').removeClass('btn__yellow');
         $(this).addClass('btn__yellow');
         $('.project-category').fadeOut(500);
-        $('.project-content').find('[data-project-category='+category_id+']').fadeIn(500);
+        $('.project-content').find('[data-project-category='+category_id+']').fadeIn(1000);
     });
 /***********END project category tabs*************/
+
+/***********services category tabs*************/
+    $('.services-menu_item').click( function (e) {
+        var services_id = $(this).attr('data-services-id');
+        $('.services-menu_item').removeClass('active');
+        $(this).addClass('active');
+        $('.services-page-item').fadeOut(500);
+        $('.content-section').find('[data-services-item-id='+services_id+']').fadeIn(1000);
+    });
+/***********END services category tabs*************/
 
 });
