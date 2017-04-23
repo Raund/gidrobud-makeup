@@ -96,6 +96,10 @@ body{
     background-image: linear-gradient(top, #4f85c9 0%, #4f85c9 0%, #67aff8 36.01%, #4f85c9 100%);
   }
 }
+.btn__blue-in-vacantion{
+  margin-top: 40px;
+  margin-left: 40px;
+}
 .btn__yellow{
   box-shadow: -1px 4px 0 #db911b;
   background-image: linear-gradient(top, #db911b 0%, #db911b 0%, #db911b 36.01%, #ffbc55 100%);
@@ -422,7 +426,8 @@ nav{
 .services-menu-wrap{
   padding-left: 80px;
 }
-.services-menu_item{
+.services-menu_item, .vacantions-menu_item{
+  position: relative;
   width: 100%;
   min-height: 55px;
   padding: 5px 70px;
@@ -437,6 +442,9 @@ nav{
     cursor: pointer;
     border: 1px dashed #afb2b5;
   }
+}
+.vacantions-menu_item{
+  line-height: 50px;
 }
 .services-menu_item.active{
   background-color: #e3ffeb;
@@ -495,6 +503,26 @@ textarea{
   background-color: #eeeeee;
   padding-left: 40px;
   font-size: 14px;
+}
+.content-section_vacantios{
+  padding-bottom: 70px;
+}
+.vacantions-item{
+  margin-bottom: 50px;
+  ul{
+    margin-left: -10px;
+    li{
+      padding-left:40px;
+      margin: 10px 0;
+      background: url("../img/check-list.png") left top no-repeat;
+    }
+  }
+}
+.vacantions-item_wrap:nth-child(even){
+  padding-left: 70px;
+}
+.content-section-top{
+  margin-bottom: 20px;
 }
 .footer{
   width: 100%;

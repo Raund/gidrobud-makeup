@@ -86,4 +86,13 @@ $(function(){
     });
 /***********END services category tabs*************/
 
+/**********scrollTo**************/
+$(".vacantions-menu_item").click(function() {
+    var scrollId = $(this).attr('data-id');
+    $('html, body').animate({
+        scrollTop: $("#" + scrollId).offset().top
+    }, 2000);
+});
+/**********END scrollTo**************/
+
 });
