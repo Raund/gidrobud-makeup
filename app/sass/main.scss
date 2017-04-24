@@ -570,5 +570,10 @@ textarea{
   &.active{
     text-decoration: underline;  }
 }
+/*owl-carousel*/
+.owl-pagination{
+  display: none;
+}
+/*END owl-carousel*/
 //ALWAYS END
 @import "media.scss";

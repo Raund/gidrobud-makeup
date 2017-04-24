@@ -572,6 +572,11 @@ textarea {
   .footer_nav-item.active {
     text-decoration: underline; }
 
+/*owl-carousel*/
+.owl-pagination {
+  display: none; }
+
+/*END owl-carousel*/
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
