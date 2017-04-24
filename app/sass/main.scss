@@ -149,6 +149,7 @@ nav{
 }
 .section-title{
   font-size: 55px;
+  background-size: contain;
 }
 .section-subtitle{
   font-size: 30px;
@@ -249,6 +250,7 @@ nav{
   color: #ffffff;
   margin-top: 30px;
   margin-bottom: 10px;
+  background-size: contain;
 }
 .section-description_about-us{
   width: 100%;
@@ -373,14 +375,13 @@ nav{
 }
 .flex-gallery{
   margin-bottom: 80px;
+  margin-top: 30px;
 }
 .project-btn-wrapper{
   padding-top: 50px;
 }
 .project-content{
   padding: 10px 0 70px;
-}
-.project-popup{
 }
 #overlay {
   z-index:13;
@@ -543,6 +544,60 @@ textarea{
   color: #569d6a;
   font-size: 35px;
   margin-bottom: 15px;
+}
+.section-title_contact{
+  margin-top: 30px;
+}
+.contact-right{
+  padding-left: 35px;
+}
+.contact-left{
+  padding-right: 35px;
+}
+#menu-toggle-open{
+  display: none;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  height: 40px;
+  padding-top: 13px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #559d69;
+  background: #71d38d;
+  font-weight: bold;
+  text-align: center;
+  z-index: 100;
+}
+#nav-toggle{
+  position: fixed;
+  top: -370px;
+  width: 100%;
+  z-index: 999;
+  transition: top ease 1s;
+}
+#menu-toggle-close{
+  position: absolute;
+  width: 65px;
+  height: 45px;
+  right: 10px;
+  padding-top: 16px;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 0 5px #559d69;
+  background: #71d38d;
+  font-weight: bold;
+  text-align: center;
+}
+#nav-toggle.active {
+  top: -45px;
+  transition: top ease 1s;
+}
+.nav-toggle_item{
+  display: block;
+  font-size: 24px;
+  padding: 5px 0;
+  background-color: #67aff8;
+  border-bottom: 1px solid #4f85c9;
 }
 .footer{
   width: 100%;

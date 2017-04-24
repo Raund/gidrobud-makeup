@@ -157,7 +157,8 @@ nav {
   text-transform: uppercase; }
 
 .section-title {
-  font-size: 55px; }
+  font-size: 55px;
+  background-size: contain; }
 
 .section-subtitle {
   font-size: 30px; }
@@ -254,7 +255,8 @@ nav {
 .section-title_about {
   color: #ffffff;
   margin-top: 30px;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  background-size: contain; }
 
 .section-description_about-us {
   width: 100%;
@@ -378,7 +380,8 @@ nav {
   margin-bottom: 20px; }
 
 .flex-gallery {
-  margin-bottom: 80px; }
+  margin-bottom: 80px;
+  margin-top: 30px; }
 
 .project-btn-wrapper {
   padding-top: 50px; }
@@ -548,6 +551,66 @@ textarea {
   font-size: 35px;
   margin-bottom: 15px; }
 
+.section-title_contact {
+  margin-top: 30px; }
+
+.contact-right {
+  padding-left: 35px; }
+
+.contact-left {
+  padding-right: 35px; }
+
+#menu-toggle-open {
+  display: none;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  height: 40px;
+  padding-top: 13px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  -webkit-box-shadow: 0 0 5px #559d69;
+          box-shadow: 0 0 5px #559d69;
+  background: #71d38d;
+  font-weight: bold;
+  text-align: center;
+  z-index: 100; }
+
+#nav-toggle {
+  position: fixed;
+  top: -370px;
+  width: 100%;
+  z-index: 999;
+  -webkit-transition: top ease 1s;
+  transition: top ease 1s; }
+
+#menu-toggle-close {
+  position: absolute;
+  width: 65px;
+  height: 45px;
+  right: 10px;
+  padding-top: 16px;
+  -webkit-border-radius: 0 0 10px 10px;
+          border-radius: 0 0 10px 10px;
+  -webkit-box-shadow: 0 0 5px #559d69;
+          box-shadow: 0 0 5px #559d69;
+  background: #71d38d;
+  font-weight: bold;
+  text-align: center; }
+
+#nav-toggle.active {
+  top: -45px;
+  -webkit-transition: top ease 1s;
+  transition: top ease 1s; }
+
+.nav-toggle_item {
+  display: block;
+  font-size: 24px;
+  padding: 5px 0;
+  background-color: #67aff8;
+  border-bottom: 1px solid #4f85c9; }
+
 .footer {
   width: 100%;
   height: 140px;
@@ -579,8 +642,118 @@ textarea {
 /*END owl-carousel*/
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  .btn {
+    width: 135px; }
+  .footer_nav-item {
+    padding: 0 3px; }
+  .section-title_service-item {
+    font-size: 45px; } }
+
 /* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .logo {
+    width: 120px;
+    margin-bottom: 20px; }
+  .nav_item {
+    font-size: 14px;
+    padding: 0 5px; }
+  .statistic-item-wrap {
+    padding-bottom: 40px; }
+  .statistic-item-wrap:nth-child(3) {
+    border: none; }
+  .statistic-item {
+    background-size: contain; }
+  .shadow-block {
+    width: 90%; }
+  .project-item_img {
+    height: 250px; }
+  .project-popup_wrap {
+    margin-left: -300px;
+    text-align: center; }
+  .project-item_full-description {
+    margin-top: 10px; }
+  .aboutus-section_logo {
+    width: 180px;
+    float: left;
+    margin: 0 20px 10px 0; }
+  .dashed-block {
+    width: 100%;
+    margin-right: 0; }
+  .statistic-item_about-us {
+    padding-bottom: 15px;
+    margin-bottom: 10px; }
+  .section-title {
+    font-size: 42px;
+    line-height: 60px; }
+  .license-orderers-section {
+    padding-bottom: 140px; }
+  .footer_nav-item {
+    font-size: 12px; }
+  .section-title_service-item {
+    font-size: 35px;
+    line-height: 45px; }
+  .contact-right {
+    padding-left: 15px; }
+  .contact-left {
+    padding-right: 15px; }
+  .section-title_contact-callback {
+    margin-top: 20px; } }
+
 /* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  body {
+    color: #000000; }
+  .nav__blue {
+    display: none; }
+  .address, .phone {
+    margin-bottom: 5px; }
+  .xs-text-right {
+    text-align: right; }
+  .header-wrap .btn {
+    float: right; }
+  .section-title {
+    font-size: 36px;
+    line-height: 45px; }
+  .statistic-item-wrap {
+    border: none; }
+  .project-item_wrap {
+    padding-right: 15px; }
+  .project-item_img {
+    height: 420px; }
+  .project-popup_wrap {
+    width: 460px;
+    margin-left: -230px; }
+  .statistic-item_about-us {
+    padding-bottom: 0;
+    margin-bottom: 20px;
+    padding-left: 105px; }
+  .btn__services {
+    margin: 35px auto; }
+  .footer {
+    height: initial;
+    min-height: 150px;
+    text-align: center; }
+  .btn__footer {
+    margin: 0 auto;
+    margin-top: 30px; }
+  .footer_logo {
+    float: none;
+    margin-top: 10px;
+    margin-bottom: 20px; }
+  #menu-toggle-open {
+    display: block; }
+  .column {
+    -webkit-column-count: 1;
+       -moz-column-count: 1;
+            column-count: 1; }
+  .services-menu-wrap {
+    padding-left: 0; }
+  .section-description {
+    width: 100%; }
+  .content-section_box-services {
+    width: 100%; } }
+
 /*
 !*Disable Animation on Mobile Devices*!
 .animated
@@ -604,6 +777,67 @@ transform: none !important
 animation: none !important
 */
 /* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .header-wrap {
+    padding-left: 0;
+    padding-right: 0; }
+  .header {
+    padding: 10px; }
+  .section-title {
+    font-size: 27px;
+    line-height: 31px; }
+  .advertising-section {
+    margin-left: -13px; }
+  .header-wrap {
+    padding: inherit; }
+  .xs-text-right {
+    text-align: inherit; }
+  .statistic {
+    width: 90%;
+    padding: 15px; }
+  .statistic-item-wrap {
+    padding: 0;
+    padding-bottom: 20px; }
+  .statistic-item_number {
+    font-size: 38px;
+    line-height: 31px; }
+  .shadow-block {
+    width: 65%; }
+  .section-subtitle {
+    font-size: 22px; }
+  .section-title_projects {
+    min-height: 50px;
+    padding-top: 15px; }
+  .project-item_img {
+    height: 250px; }
+  .aboutus-section_logo {
+    float: none;
+    margin: 0; }
+  .footer_nav-item {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 18px; }
+  .footer_nav {
+    margin-top: 15px; }
+  .license-orderers-section {
+    padding-bottom: 40px; }
+  .project-popup_wrap {
+    width: 300px;
+    margin-left: -150px; }
+  #callback, .vacantions-resume-popup {
+    width: 300px;
+    margin-left: -150px; }
+  .statistic-item_about-us {
+    padding-top: 100px;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+    padding-left: 0;
+    background-position: top center;
+    background-size: inherit; }
+  .content-section {
+    padding-left: 5px;
+    padding-right: 5px; } }
+
 /* Custom, iPhone Retina */
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */

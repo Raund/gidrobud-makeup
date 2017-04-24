@@ -24,30 +24,41 @@
 </head>
 
 <body>
+	<div id="menu-toggle-open">Меню</div>
+	<nav id="nav-toggle">
+		<a href="index.html" class="nav-toggle_item active">Главная</a>
+		<a href="about-us.html" class="nav-toggle_item">О компании</a>
+		<a href="services.html" class="nav-toggle_item">Услуги</a>
+		<a href="project.html" class="nav-toggle_item">Проекты</a>
+		<a href="vacantions.html" class="nav-toggle_item">Вакансии</a>
+		<a href="license.html" class="nav-toggle_item">Лицензии</a>
+		<a href="contact.html" class="nav-toggle_item">Контакты</a>
+		<div id="menu-toggle-close">Закрыть</div>
+	</nav>
 
 	<header class="header header_other" style="background-image: url('/img/bg-top.jpg')">
 		<div class="container header-wrap">
 			<div class="row">
-				<div class="col-md-3">
+				<div class="col-xs-5 col-sm-2 col-md-3">
 					<a href="index.html"><img src="img/logo.png" alt="Gidrobud" class="logo"></a>
 				</div>
-				<div class="col-md-9">
-					<div class="col-md-offset-2 col-md-3">
+				<div class="col-xs-7 col-sm-10 col-md-9 xs-text-right">
+					<div class="col-xs-12 col-sm-4 col-md-offset-2 col-md-3">
 						<div class="address"><b>Адрес:</b> <br>
 							г. Киев <br>
 							ул. Шевченко, 17</div>
 					</div>
-					<div class="col-md-offset-1 col-md-3">
+					<div class="col-xs-12 col-sm-4 col-md-offset-1 col-md-3">
 						<div class="phone">
 							<b>Телефон:</b><br>
 							+38 (044) 00-00-00 <br>
 							+38 (044) 11-11-00
 						</div>
 					</div>
-					<div class="col-md-3">
-						<div class="btn btn__yellow">заказать звонок</div>
+					<div class="col-xs-12 col-sm-4 col-md-3">
+						<div class="btn btn__yellow callback">заказать звонок</div>
 					</div>
-					<div class="col-md-12">
+					<div class="col-sm-12 col-md-12">
 						<nav class="nav__blue">
 							<a href="index.html" class="nav_item active">Главная</a>
 							<a href="about-us.html" class="nav_item">О компании</a>
@@ -121,7 +132,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-3">
-					<div class="btn btn__yellow btn__footer">заказать звонок</div>
+					<div class="btn btn__yellow btn__footer callback">заказать звонок</div>
 				</div>
 				<div class="col-md-6">
 					<nav class="footer_nav">
@@ -140,6 +151,17 @@
 			</div>
 		</div>
 	</footer>
+	<div id="callback" style="display: none;">
+		<h1 class="title section-title section-title_service-form">Обратный звонок</h1>
+		<form action="" id="vacantion-form-1" method="post">
+			<input type="text" name="name" placeholder="ФИО">
+			<input type="number" name="phone" placeholder="Телефон">
+			<textarea rows="8" name="text" placeholder="Cообщение"></textarea>
+			<button type="submit" id="vacantion-send-1" class="btn btn__blue">отправить</button>
+		</form>
+	</div>
+
+	<div id="overlay"></div><!-- Пoдлoжкa -->
 
 	<script src="libs/jquery/dist/jquery.min.js"></script>
 	<script src="js/common.js"></script>
