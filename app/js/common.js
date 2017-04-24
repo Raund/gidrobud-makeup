@@ -163,4 +163,11 @@ $(function(){
     });
 /**********END scrollTo**************/
 
+/**********Transition to a specified service**************/
+    var hashId = window.location.hash.slice(1);
+    if(hashId != 0){
+        $('.services-menu-wrap').find('[data-services-id=' + hashId +']').trigger('click');
+    }
+/**********END transition to a specified service**************/
+
 });
