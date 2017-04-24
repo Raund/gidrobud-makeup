@@ -403,6 +403,7 @@ nav {
 .project-popup_wrap {
   display: none;
   position: fixed;
+  max-height: 500px;
   top: 50px !important;
   left: 50%;
   margin-left: -500px;
@@ -411,6 +412,7 @@ nav {
   border: 1px dashed #000;
   background-color: #fff;
   padding: 15px;
+  overflow-y: scroll;
   z-index: 15; }
 
 .project-popup_item-img {
@@ -527,6 +529,24 @@ textarea {
 
 .content-section-top {
   margin-bottom: 20px; }
+
+#callback, .vacantions-resume-popup {
+  display: none;
+  position: fixed;
+  top: 50px !important;
+  left: 50%;
+  margin-left: -250px;
+  width: 500px;
+  border: 1px dashed #000;
+  background-color: #fff;
+  padding: 25px;
+  text-align: center;
+  z-index: 15; }
+
+.section-title_service-form {
+  color: #569d6a;
+  font-size: 35px;
+  margin-bottom: 15px; }
 
 .footer {
   width: 100%;

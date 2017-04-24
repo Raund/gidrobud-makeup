@@ -99,7 +99,7 @@
 						</div>
 					</div>
 					<div class="col-md-6 vacantions-item_wrap">
-						<div class="vacantions-item">
+						<div id="vacantion-2" class="vacantions-item">
 							<h1 class="title section-title section-title_service-item">Вакансия 1</h1>
 							<p>На самом деле стоимость электроэнергии, металла и всех используемых материалов одинакова приблизительно везде по Украине. Но некоторые предприятия прибегают к уловкам, скажем так что бы привлечь клиентов  ставят цену на свою продукцию ниже рыночной или даже ниже себестоимости но в это же время стоимость их услуг по монтажу их продукции у таких компаний доходит до половины от стоимости самой изготовляемой  продукции.</p>
 							<ul>
@@ -129,7 +129,7 @@
 						</div>
 					</div>
 					<div class="col-md-6 vacantions-item_wrap">
-						<div class="vacantions-item">
+						<div id="vacantion-4" class="vacantions-item" data-id="1">
 							<h1 class="title section-title section-title_service-item">Вакансия 1</h1>
 							<p>На самом деле стоимость электроэнергии, металла и всех используемых материалов одинакова приблизительно везде по Украине. Но некоторые предприятия прибегают к уловкам, скажем так что бы привлечь клиентов  ставят цену на свою продукцию ниже рыночной или даже ниже себестоимости но в это же время стоимость их услуг по монтажу их продукции у таких компаний доходит до половины от стоимости самой изготовляемой  продукции.</p>
 							<ul>
@@ -142,6 +142,50 @@
 							</ul>
 							<div class="btn btn__blue btn__blue-in-vacantion">подать заявку</div>
 						</div>
+					</div>
+					<div data-id="vacantion-1" class="vacantions-resume-popup" style="display: none;">
+						<h1 class="title section-title section-title_service-form">Подать заявку на Вакансию 1</h1>
+						<form action="" id="vacantion-form-1" method="post">
+							<input type="text" name="name" placeholder="ФИО">
+							<input type="number" name="phone" placeholder="Телефон">
+							<input type="text" name="specialty" placeholder="Специальность">
+							<input type="text" name="experience" placeholder="Опыт роботы">
+							<textarea rows="8" name="text" placeholder="Кратко о себе"></textarea>
+							<button type="submit" id="vacantion-send-1" class="btn btn__blue">отправить</button>
+						</form>
+					</div>
+					<div data-id="vacantion-2" class="vacantions-resume-popup" style="display: none;">
+						<h1>Подать заявку</h1>
+						<form action="" id="vacantion-form-2" method="post">
+							<input type="text" name="name" placeholder="ФИО">
+							<input type="number" name="phone" placeholder="Телефон">
+							<input type="text" name="specialty" placeholder="Специальность">
+							<input type="text" name="experience" placeholder="Опыт роботы">
+							<textarea rows="8" name="text" placeholder="Кратко о себе"></textarea>
+							<button type="submit" id="vacantion-send-2" class="btn btn__blue">отправить</button>
+						</form>
+					</div>
+					<div data-id="vacantion-3" class="vacantions-resume-popup" style="display: none;">
+						<h1>Подать заявку</h1>
+						<form action="" id="vacantion-form-3" method="post">
+							<input type="text" name="name" placeholder="ФИО">
+							<input type="number" name="phone" placeholder="Телефон">
+							<input type="text" name="specialty" placeholder="Специальность">
+							<input type="text" name="experience" placeholder="Опыт роботы">
+							<textarea rows="8" name="text" placeholder="Кратко о себе"></textarea>
+							<button type="submit" id="vacantion-send-3" class="btn btn__blue">отправить</button>
+						</form>
+					</div>
+					<div data-id="vacantion-4" class="vacantions-resume-popup" style="display: none;">
+						<h1>Подать заявку</h1>
+						<form action="" id="vacantion-form-4" method="post">
+							<input type="text" name="name" placeholder="ФИО">
+							<input type="number" name="phone" placeholder="Телефон">
+							<input type="text" name="specialty" placeholder="Специальность">
+							<input type="text" name="experience" placeholder="Опыт роботы">
+							<textarea rows="8" name="text" placeholder="Кратко о себе"></textarea>
+							<button type="submit" id="vacantion-send-4" class="btn btn__blue">отправить</button>
+						</form>
 					</div>
 				</div>
 			</div>
@@ -171,6 +215,8 @@
 			</div>
 		</div>
 	</footer>
+
+	<div id="overlay"></div><!-- Пoдлoжкa -->
 
 	<script src="libs/jquery/dist/jquery.min.js"></script>
 	<script src="js/common.js"></script>

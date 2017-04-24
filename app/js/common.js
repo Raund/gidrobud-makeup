@@ -4,11 +4,10 @@ $(function(){
     $(".owl-carousel").owlCarousel({
         autoWidth:true,
         items:4,
-        nav:true,
+        nav:false,
         loop: true,
         autoPlay: 4000,
         dots : false,
-        navText : ["",""],
     });
 /***********END setting on main*************/
 
@@ -66,6 +65,75 @@ $(function(){
     });
 /***********END project pop-up*************/
 
+/***********vacantions pop-up*************/
+    $('.btn__blue-in-vacantion').click(function(event){
+        var vacantions_id = $(this).parent().attr('id');
+        $('#overlay').fadeIn(400,
+            function(){
+                $('[data-id=' + vacantions_id + ']')
+                    .css('display', 'block')
+                    .animate({opacity: 1, top: '45%'}, 200);
+            });
+        //Popup advice ClOSE
+        $('#overlay').click( function(){
+            $('[data-id=' + vacantions_id + ']')
+                .animate({opacity: 0, top: '45%'}, 200,
+                    function(){
+                        $(this).css('display', 'none');
+                        $('#overlay').fadeOut(400);
+                    }
+                );
+        });
+        $(document).keydown( function(e) {
+            if (e.keyCode === 27) {
+                $('[data-id=' + vacantions_id + ']')
+                    .animate({opacity: 0, top: '45%'}, 200,
+                        function(){
+                            $(this).css('display', 'none');
+                            $('#overlay').fadeOut(400);
+                        }
+                    );
+                e.preventDefault();
+            }
+        });
+        event.preventDefault();
+    });
+/***********END vacantions pop-up*************/
+    
+/***********callback pop-up*************/
+    $('.callback').click(function(event){
+        $('#overlay').fadeIn(400,
+            function(){
+                $('#callback')
+                    .css('display', 'block')
+                    .animate({opacity: 1, top: '45%'}, 200);
+            });
+        //Popup advice ClOSE
+        $('#overlay').click( function(){
+            $('#callback')
+                .animate({opacity: 0, top: '45%'}, 200,
+                    function(){
+                        $(this).css('display', 'none');
+                        $('#overlay').fadeOut(400);
+                    }
+                );
+        });
+        $(document).keydown( function(e) {
+            if (e.keyCode === 27) {
+                $('#callback')
+                    .animate({opacity: 0, top: '45%'}, 200,
+                        function(){
+                            $(this).css('display', 'none');
+                            $('#overlay').fadeOut(400);
+                        }
+                    );
+                e.preventDefault();
+            }
+        });
+        event.preventDefault();
+    });
+/***********END callback pop-up*************/
+
 /***********project category tabs*************/
     $('.project-btn-wrapper .btn').click( function (e) {
         var category_id = $(this).attr('data-category-id');
@@ -87,12 +155,12 @@ $(function(){
 /***********END services category tabs*************/
 
 /**********scrollTo**************/
-$(".vacantions-menu_item").click(function() {
-    var scrollId = $(this).attr('data-id');
-    $('html, body').animate({
-        scrollTop: $("#" + scrollId).offset().top
-    }, 2000);
-});
+    $(".vacantions-menu_item").click(function() {
+        var scrollId = $(this).attr('data-id');
+        $('html, body').animate({
+            scrollTop: $("#" + scrollId).offset().top
+        }, 2000);
+    });
 /**********END scrollTo**************/
 
 });

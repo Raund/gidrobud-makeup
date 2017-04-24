@@ -45,7 +45,7 @@
 						</div>
 					</div>
 					<div class="col-md-3">
-						<div class="btn btn__yellow">заказать звонок</div>
+						<div class="btn btn__yellow callback">заказать звонок</div>
 					</div>
 					<div class="col-md-12">
 						<nav class="nav__blue">
@@ -214,7 +214,7 @@
 						На самом деле стоимость электроэнергии, металла и всех используемых материалов одинакова приблизительно везде по Украине. Но некоторые предприятия прибегают к уловкам, скажем так что бы привлечь клиентов  ставят цену на свою продукцию ниже рыночной или даже ниже себестоимости но в это же время стоимость их услуг по монтажу их продукции у таких компаний доходит до половины от стоимости самой изготовляемой  продукции.
 						<br>На самом деле стоимость электроэнергии, металла и всех используемых материалов одинакова приблизительно везде по Украине. Но некоторые предприятия прибегают к уловкам, скажем так что бы привлечь клиентов  ставят цену на свою продукцию ниже рыночной или даже ниже себестоимости но в это же время стоимость их услуг по монтажу их продукции у таких компаний доходит до половины от стоимости самой изготовляемой  продукции.
 						<br>На самом деле стоимость электроэнергии, металла и всех используемых материалов одинакова приблизительно везде по Украине. Но некоторые предприятия прибегают к уловкам, скажем так что бы привлечь клиентов  ставят цену на свою продукцию ниже рыночной или даже ниже себестоимости но в </div>
-				<div class="btn btn__yellow">заказать звонок</div>
+				<div class="btn btn__yellow callback">заказать звонок</div>
 				</div>
 				<div class="col-md-6">
 					<div class="dashed-block">
@@ -357,7 +357,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-3">
-					<div class="btn btn__yellow btn__footer">заказать звонок</div>
+					<div class="btn btn__yellow btn__footer callback">заказать звонок</div>
 				</div>
 				<div class="col-md-6">
 					<nav class="footer_nav">
@@ -376,6 +376,17 @@
 			</div>
 		</div>
 	</footer>
+	<div id="callback" style="display: none;">
+		<h1 class="title section-title section-title_service-form">Обратный звонок</h1>
+		<form action="" id="vacantion-form-1" method="post">
+			<input type="text" name="name" placeholder="ФИО">
+			<input type="number" name="phone" placeholder="Телефон">
+			<textarea rows="8" name="text" placeholder="Cообщение"></textarea>
+			<button type="submit" id="vacantion-send-1" class="btn btn__blue">отправить</button>
+		</form>
+	</div>
+
+	<div id="overlay"></div><!-- Пoдлoжкa -->
 
 	<script src="libs/jquery/dist/jquery.min.js"></script>
 	<script src="js/common.js"></script>
