@@ -24,30 +24,41 @@
 </head>
 
 <body>
+	<div id="menu-toggle-open">Меню</div>
+	<nav id="nav-toggle">
+		<a href="index.html" class="nav-toggle_item active">Главная</a>
+		<a href="about-us.html" class="nav-toggle_item">О компании</a>
+		<a href="services.html" class="nav-toggle_item">Услуги</a>
+		<a href="project.html" class="nav-toggle_item">Проекты</a>
+		<a href="vacantions.html" class="nav-toggle_item">Вакансии</a>
+		<a href="license.html" class="nav-toggle_item">Лицензии</a>
+		<a href="contact.html" class="nav-toggle_item">Контакты</a>
+		<div id="menu-toggle-close">Закрыть</div>
+	</nav>
 
 	<header class="header header_other" style="background-image: url('/img/bg-top.jpg')">
 		<div class="container header-wrap">
 			<div class="row">
-				<div class="col-md-3">
+				<div class="col-xs-5 col-sm-2 col-md-3">
 					<a href="index.html"><img src="img/logo.png" alt="Gidrobud" class="logo"></a>
 				</div>
-				<div class="col-md-9">
-					<div class="col-md-offset-2 col-md-3">
+				<div class="col-xs-7 col-sm-10 col-md-9 xs-text-right">
+					<div class="col-xs-12 col-sm-4 col-md-offset-2 col-md-3">
 						<div class="address"><b>Адрес:</b> <br>
 							г. Киев <br>
 							ул. Шевченко, 17</div>
 					</div>
-					<div class="col-md-offset-1 col-md-3">
+					<div class="col-xs-12 col-sm-4 col-md-offset-1 col-md-3">
 						<div class="phone">
 							<b>Телефон:</b><br>
 							+38 (044) 00-00-00 <br>
 							+38 (044) 11-11-00
 						</div>
 					</div>
-					<div class="col-md-3">
-						<div class="btn btn__yellow">заказать звонок</div>
+					<div class="col-xs-12 col-sm-4 col-md-3">
+						<div class="btn btn__yellow callback">заказать звонок</div>
 					</div>
-					<div class="col-md-12">
+					<div class="col-sm-12 col-md-12">
 						<nav class="nav__blue">
 							<a href="index.html" class="nav_item active">Главная</a>
 							<a href="about-us.html" class="nav_item">О компании</a>
@@ -73,7 +84,7 @@
 						<p>На самом деле стоимость электроэнергии, металла и всех используемых материалов одинакова приблизительно везде по Украине. Но некоторые предприятия прибегают к уловкам, скажем так что бы привлечь клиентов  ставят цену на свою продукцию ниже рыночной или даже ниже себестоимости но в это же время стоимость их услуг по монтажу их продукции у таких компаний доходит до половины от стоимости самой изготовляемой  продукции.</p>
 						<p>На самом деле стоимость электроэнергии, металла и всех используемых материалов одинакова приблизительно везде по Украине. Но некоторые предприятия прибегают к уловкам, скажем так что бы привлечь клиентов  ставят цену на свою продукцию ниже рыночной или даже ниже себестоимости но в это же время стоимость их услуг по монтажу их продукции у таких компаний доходит до половины от стоимости самой изготовляемой  продукции.</p>
 					</div>
-					<ul class="col-md-6 services-menu-wrap">
+					<ul class="col-sm-12 col-md-6 services-menu-wrap">
 						<li class="vacantions-menu_item" data-id="vacantion-1"><div class="vertical">Вакансия 1</div></li>
 						<li class="vacantions-menu_item" data-id="vacantion-2"><div class="vertical">Вакансия 2</div></li>
 						<li class="vacantions-menu_item" data-id="vacantion-3"><div class="vertical">Вакансия 3</div></li>
@@ -224,7 +235,7 @@
 			<button type="submit" id="send-1" class="btn btn__blue">отправить</button>
 		</form>
 	</div>
-	
+
 	<div id="overlay"></div><!-- Пoдлoжкa -->
 
 	<script src="libs/jquery/dist/jquery.min.js"></script>

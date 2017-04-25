@@ -126,6 +126,9 @@ body {
   margin: 0 auto;
   margin-top: 60px; }
 
+.btn__category {
+  margin: 10px auto; }
+
 .btn__footer {
   margin-top: 50px; }
 
@@ -387,6 +390,7 @@ nav {
   padding-top: 50px; }
 
 .project-content {
+  min-height: 500px;
   padding: 10px 0 70px; }
 
 #overlay {
@@ -698,7 +702,17 @@ textarea {
   .contact-left {
     padding-right: 15px; }
   .section-title_contact-callback {
-    margin-top: 20px; } }
+    margin-top: 20px; }
+  .project-btn-wrapper {
+    padding-top: 10px; }
+  .vacantions-item_wrap:nth-child(even) {
+    padding-left: 15px; }
+  .services-menu-wrap {
+    padding-left: 0; }
+  .vacantions-menu_item {
+    display: inline-block;
+    width: 48%;
+    padding-right: 0; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
@@ -748,10 +762,13 @@ textarea {
        -moz-column-count: 1;
             column-count: 1; }
   .services-menu-wrap {
-    padding-left: 0; }
+    padding-left: 15px; }
   .section-description {
     width: 100%; }
   .content-section_box-services {
+    width: 100%; }
+  .vacantions-menu_item {
+    display: inline-block;
     width: 100%; } }
 
 /*
@@ -836,7 +853,10 @@ animation: none !important
     background-size: inherit; }
   .content-section {
     padding-left: 5px;
-    padding-right: 5px; } }
+    padding-right: 5px; }
+  .content-section {
+    padding-left: 15px;
+    padding-right: 15px; } }
 
 /* Custom, iPhone Retina */
 /*==========  Mobile First Method  ==========*/

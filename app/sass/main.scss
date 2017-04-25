@@ -115,6 +115,9 @@ body{
   margin: 0 auto;
   margin-top: 60px;
 }
+.btn__category{
+  margin: 10px auto;
+}
 .btn__footer{
   margin-top: 50px;
 }
@@ -381,6 +384,7 @@ nav{
   padding-top: 50px;
 }
 .project-content{
+  min-height:500px;
   padding: 10px 0 70px;
 }
 #overlay {
