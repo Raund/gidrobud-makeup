@@ -840,10 +840,12 @@ animation: none !important
     padding-bottom: 40px; }
   .project-popup_wrap {
     width: 300px;
+    max-height: 420px;
     margin-left: -150px; }
   #callback, .vacantions-resume-popup {
     width: 300px;
-    margin-left: -150px; }
+    margin-left: -150px;
+    padding: 15px; }
   .statistic-item_about-us {
     padding-top: 100px;
     padding-bottom: 0;
@@ -856,7 +858,9 @@ animation: none !important
     padding-right: 5px; }
   .content-section {
     padding-left: 15px;
-    padding-right: 15px; } }
+    padding-right: 15px; }
+  input {
+    height: 40px; } }
 
 /* Custom, iPhone Retina */
 /*==========  Mobile First Method  ==========*/

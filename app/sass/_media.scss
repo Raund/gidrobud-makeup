@@ -264,11 +264,13 @@ animation: none !important
   }
   .project-popup_wrap {
     width: 300px;
+    max-height: 420px;
     margin-left: -150px;
   }
   #callback, .vacantions-resume-popup{
     width: 300px;
     margin-left: -150px;
+    padding: 15px;
   }
   .statistic-item_about-us {
     padding-top: 100px;
@@ -285,6 +287,9 @@ animation: none !important
   .content-section {
      padding-left: 15px;
      padding-right: 15px;
+  }
+  input {
+    height: 40px;
   }
 }
 
